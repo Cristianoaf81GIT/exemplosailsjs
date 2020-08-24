@@ -1,0 +1,20 @@
+<ol class="breadcumb">
+  <li class="breadcumb-item">
+    <a href="/article/list">Artigos</a>
+  </li>
+  <li class="breadcumb-item active">
+    <a href="/article/add">Adicionar</a>
+  </li>
+</ol>
+<h1 class="display-4">Adicionar artigo</h1>
+<form action="/article/create" method="POST">
+  <div class="form-group">
+    <label for="title">Titulo</label>
+    <input type="text" name="title" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="body">Corpo</label>
+    <textarea name="body" class="form-control"></textarea>
+  </div>
+  <input type="submit" value="enviar" class="btn btn-primary"/>
+</form>
